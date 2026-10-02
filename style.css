@@ -541,7 +541,7 @@ header {
     .contact {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-areas: "text" "info";
         gap: 40px;
         padding: 60px 20px;
         text-align: center;

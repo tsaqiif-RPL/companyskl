@@ -399,6 +399,193 @@ header {
 
 @media (max-width: 768px) {
 
+    
+    .header {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        gap: 20px;
+        padding: 20px 15px;
+        height: auto;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .logo img {
+        width: 60px;
+        height: auto;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+
+    
+    .beranda {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        height: auto;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .product-info {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .product-info h1 {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+
+    .slider-buttons {
+        position: static;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+
+    
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "text";
+        gap: 30px;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .foto-about {
+        grid-area: image;
+        width: 100%;
+    }
+
+    .text {
+        grid-area: text;
+        width: 100%;
+    }
+
+    .foto-about img {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+
+    .text .filosofi {
+        font-size: clamp(3rem, 15vw, 5rem);
+        padding: 0;
+    }
+
+    .text .deskripsi-produk {
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        font-size: 16px;
+    }
+
+
+    
+    .collection {
+        padding: 60px 20px;
+    }
+
+    .collection-header {
+        text-align: center;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+
+    
+    .contact {
+    min-height: 70vh;
+    padding: 100px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    background: #111;
+    color: #fff;
+
+}
+
+.contact-text {
+    width: 50%;
+}
+
+.contact-text p {
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.contact-text h2 {
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.9;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    width: 35%;
+}
+
+.contact-info div {
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.contact-info span {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 7px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+
     /* HEADER */
     .header {
         display: grid;
@@ -537,8 +724,8 @@ header {
     }
 
 
-    /* CONTACT */
-    .contact {
+   
+     .contact {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "text" "info";

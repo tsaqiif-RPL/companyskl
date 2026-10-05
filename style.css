@@ -399,7 +399,7 @@ header {
 
 @media (max-width: 768px) {
 
-    /* HEADER */
+   
     .header {
         display: grid;
         grid-template-columns: 1fr ;
@@ -433,7 +433,7 @@ header {
     }
 
 
-    /* BERANDA */
+    
     .beranda {
         display: grid;
         grid-template-columns: 1fr;
@@ -469,7 +469,7 @@ header {
     }
 
 
-    /* ABOUT */
+ 
     .about {
         display: grid;
         grid-template-columns: 1fr;
@@ -511,7 +511,7 @@ header {
     }
 
 
-    /* COLLECTION */
+  
     .collection {
         padding: 60px 20px;
     }
@@ -537,7 +537,7 @@ header {
     }
 
 
-    /* CONTACT */
+   
     .contact {
         display: grid;
         grid-template-columns: 1fr;

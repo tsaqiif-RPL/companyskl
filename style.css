@@ -399,7 +399,7 @@ header {
 
 @media (max-width: 768px) {
 
-   
+    
     .header {
         display: grid;
         grid-template-columns: 1fr ;
@@ -433,7 +433,7 @@ header {
     }
 
 
-    
+   
     .beranda {
         display: grid;
         grid-template-columns: 1fr;
@@ -469,7 +469,7 @@ header {
     }
 
 
- 
+   
     .about {
         display: grid;
         grid-template-columns: 1fr;
@@ -511,7 +511,7 @@ header {
     }
 
 
-  
+   
     .collection {
         padding: 60px 20px;
     }
@@ -536,8 +536,6 @@ header {
         aspect-ratio: 1 / 1;
     }
 
-
-   
     .contact {
         display: grid;
         grid-template-columns: 1fr;

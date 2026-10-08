@@ -399,6 +399,10 @@ header {
 
 @media (max-width: 768px) {
 
+    .contact-text p {
+        font-size: 10px;
+    }
+
     
     .header {
         display: grid;

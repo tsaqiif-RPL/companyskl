@@ -1,4 +1,4 @@
-const ORDER_WEBHOOK_URL = "https://tsaqiifco.app.n8n.cloud/webhook-test/Vobia Order";
+const ORDER_WEBHOOK_URL = "https://tsaqiifco.app.n8n.cloud/webhook/Vobia Order";
 /* ========== DATA CAROUSEL ========== */
 
 const products = [

@@ -19,14 +19,38 @@
             <img src="image 2/logo vobia.jpeg" width="70" alt="Vobia Logo">
         </a>
 
-        <nav class="navbar" id="navbar">
+        
+<button
+    class="hamburger"
+    id="hamburger"
+    aria-label="Buka menu"
+    aria-expanded="false"
+    aria-controls="navbar"
+>
+    <span></span>
+    <span></span>
+</button>
 
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#products">COLLECTION</a>
-            <a href="#contact">CONTACT</a>
+<nav class="navbar" id="navbar">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#products">COLLECTION</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#" id="ordersLink">PEMBELIAN</a>
 
-        </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Keranjang">
+        <!-- Pertahankan SVG keranjang yang sudah kamu punya -->
+        <svg width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+    </button>
+</nav>
+
 
 
     </header>
@@ -284,6 +308,71 @@
         </div>
     </section>
 
+    <!-- MODAL PRODUK -->
+    <div class="modal" id="productModal">
+        <div class="modal-box">
+
+            <button class="modal-close" id="modalClose">✕</button>
+
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+                <span class="modal-badge" id="modalBadge"></span>
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-series" id="modalSeries"></p>
+                <h2 id="modalName"></h2>
+
+                <div class="modal-meta">
+                    <span id="modalPrice"></span>
+                    <span id="modalRating"></span>
+                </div>
+
+                <p class="modal-desc" id="modalDesc"></p>
+
+                <div class="modal-actions">
+                    <button class="btn btn-outline" id="addCartBtn">+ KERANJANG</button>
+                    <button class="btn btn-solid" id="buyNowBtn">BELI SEKARANG</button>
+                </div>
+
+                <div class="comments">
+                    <h4>Komentar</h4>
+
+                    <div class="comment-form">
+                        <input type="text" id="commentName" placeholder="Nama kamu" maxlength="30">
+
+                        <div class="star-input" id="starInput">
+                            <span data-value="1">★</span>
+                            <span data-value="2">★</span>
+                            <span data-value="3">★</span>
+                            <span data-value="4">★</span>
+                            <span data-value="5">★</span>
+                        </div>
+
+                        <textarea id="commentText" placeholder="Tulis komentar..." maxlength="200" rows="3"></textarea>
+                        <button class="btn btn-solid" id="sendComment">KIRIM KOMENTAR</button>
+                    </div>
+
+                    <div id="commentList"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PANEL KERANJANG & PEMBELIAN -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <aside class="drawer" id="drawer">
+        <div class="drawer-header">
+            <h3 id="drawerTitle"></h3>
+            <button id="drawerClose">✕</button>
+        </div>
+        <div class="drawer-body" id="drawerBody"></div>
+        <div class="drawer-footer" id="drawerFooter"></div>
+    </aside>
+
+    <div class="toast" id="toast"></div>
     <script src="script.js"></script>
 
 </body>
